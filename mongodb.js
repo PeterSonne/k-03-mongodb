@@ -34,7 +34,11 @@ Products.create({ name: "bag", price: 50 });
 
 // #030207
 
-Products.findByIdAndUpdate("507f191e810c19729de860ea", { name: "umbrella" });
+Products.findByIdAndUpdate(
+  "507f191e810c19729de860ea",
+  { name: "umbrella" },
+  { new: true }
+);
 
 // #030208
 
